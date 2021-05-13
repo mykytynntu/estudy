@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        (function () {
+
+            var params = vkUrlParamsToObject(location.href);
+
+            if (params.code) {
+                window.location.replace(addParamToParamQuery(params.state, "vkAuthCode=" + params.code));
+            } else {
+                window.location.replace(params.state);
+            }
+
+
+            function vkUrlParamsToObject(href) {
+                var stateParamAnchor = "&state=";
+                var params = href.substr(href.indexOf("?") + 1, href.length);
+                var state = params.substr(params.indexOf(stateParamAnchor) + stateParamAnchor.length, params.length);
+                params = params.substr(0, params.indexOf("&state="));
+                params = urlParamsToObject(params);
+                params.state = state;
+                return params;
+            }
+
+            function urlParamsToObject(params) {
+                return JSON.parse('{"' + decodeURI(params).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g, '":"') + '"}');
+            }
+
+            function addParamToParamQuery(url, param) {
+                var isUrlWithHash = url.indexOf("#") != -1;
+
+                if (isUrlWithHash) {
+                    var urlBeforeHash = url.split("#")[0];
+                    var urlAfterHash = url.split("#")[1];
+                    return urlBeforeHash + "#" + addParam(urlAfterHash, param);
+                } else {
+                    return addParam(url, param);
+                }
+
+                function addParam(url, param) {
+                    return url.indexOf("?") != -1 ?
+                        url.split("?")[0] + "?" + param + "&" + url.split("?")[1] :
+                        url + '?' + param;
+                }
+            }
+        })();
+    </script>
+</head>
+<body>
+<div class="loading-img">
+    <div class="slm-loader"></div>
+</div>
+</body>
+</html>

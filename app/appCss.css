@@ -1,0 +1,133 @@
+.no-select{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.no-outline{outline:0}.overlaying-element{position:relative;z-index:1}.material-icons.md-18{font-size:18px !important;height:18px !important;min-height:18px !important;width:18px !important;min-width:18px !important}
+.material-icons.md-24{font-size:24px !important;height:24px !important;width:24px !important}
+.material-icons.md-36{font-size:36px !important;height:36px !important;width:36px !important}
+.material-icons.md-48{font-size:48px !important;height:48px !important;width:48px !important}
+html,body{position:absolute;margin:0;padding:0;bottom:0;top:0;left:0;right:0;display:flex;font-family:Roboto,"Helvetica Neue",sans-serif;background-color:white}
+body>ui-view{display:flex;flex-direction:column;flex:1}root-cmp{display:flex;flex:1;max-width:100%}
+.loading-img{flex:1;display:flex;align-items:center;justify-content:center;height:100%}
+.pinguo-loader{background:url("/assets/imgs/pinguo.gif") no-repeat 50% 50%;height:100%;width:100%}
+.slm-loader{border:16px solid #f3f3f3;border-top:16px solid #9c27b0;border-radius:50%;width:120px;height:120px;animation:spin 2s linear infinite}
+.cdk-overlay-pane mat-dialog-container{padding:0}.cdk-overlay-pane mat-dialog-container mat-toolbar ~ *{padding:16px 24px 24px}
+@media only screen and (max-width:480px){.cdk-overlay-pane mat-dialog-container mat-dialog-content{padding-bottom:15px}
+}::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#f1f1f1}::-webkit-scrollbar-thumb{background:#c3c1cc;border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:#555}@keyframes spin{0%{transform:rotate(0)}
+100%{transform:rotate(360deg)}}auth-component{flex:1;display:flex;justify-content:center;align-items:center}
+auth-component>div{max-width:100%;width:600px}auth-component>div mat-form-field{width:100%}
+landing-component{display:flex;flex-direction:column;align-items:center;justify-content:center;flex:1;padding:32px}
+landing-component .logo-container{max-width:700px;margin-bottom:32px}landing-component .logo-container img{max-width:100%}
+landing-component .app-description{font-size:24px;margin-bottom:32px;color:#aaa}landing-component .actions{max-width:100%;width:700px;display:flex;flex-direction:column}
+landing-component .actions>div{display:flex}landing-component .actions>div button{flex:1}
+landing-component .actions button{margin:8px}panel-component{display:flex;flex:1;overflow:hidden}
+panel-component>.loading{display:flex;flex-direction:column;justify-content:center;align-items:center;flex:1}
+panel-component>.loading mat-spinner{margin-bottom:8px}panel-component .panel-container{flex:1;color:red;display:flex;flex-direction:column;overflow:hidden;max-height:100%}
+panel-component .panel-container.mobile-panel-container mat-toolbar{flex:0 0 56px}
+panel-component .panel-container.mobile-panel-container .menu-button mat-icon{font-size:32px}
+panel-component .panel-container.mobile-panel-container mat-sidenav-container{margin-top:0 !important}
+panel-component .panel-container.mobile-panel-container .panel-sidenav-container mat-sidenav-content{margin-left:0 !important}
+panel-component .panel-container.mobile-panel-container .panel-sidenav-container mat-sidenav-content>*{margin:0;max-width:100%;overflow-x:hidden}
+panel-component .panel-container .mat-toolbar{flex:0 0 64px}panel-component .panel-container .mat-toolbar .example-app-name{display:flex;flex-direction:column}
+panel-component .panel-container .mat-toolbar .example-app-name span:first-child{line-height:1.5}
+panel-component .panel-container .mat-toolbar .example-app-name span:last-child{font-size:14px;line-height:1;color:#bcaed6}
+panel-component .panel-container .panel-toolbar{display:flex;align-items:center;justify-content:space-between}
+panel-component .panel-container .panel-toolbar .user-info-wrp{display:flex;align-items:center}
+panel-component .panel-container .panel-toolbar .user-info-wrp .user-info{line-height:1}
+panel-component .panel-container .panel-toolbar .user-info-wrp .user-info .user-name{font-size:16px}
+panel-component .panel-container .panel-toolbar .user-info-wrp .user-info .user-type{text-align:right;font-size:14px;color:#bcaed6}
+panel-component .panel-container .panel-sidenav-container{flex:1}panel-component .panel-container .panel-sidenav-container .mat-sidenav{width:240px;display:flex;flex-direction:column;padding-bottom:32px}
+panel-component .panel-container .panel-sidenav-container .mat-sidenav .filler{flex:1}
+panel-component .panel-container .panel-sidenav-container .mat-sidenav mat-nav-list .mat-list-item.active{font-weight:bold;background-color:#dad9e6}
+panel-component .panel-container .panel-sidenav-container .mat-sidenav mat-nav-list .mat-list-item.active mat-icon{color:#673ab7}
+panel-component .panel-container .panel-sidenav-container .mat-sidenav mat-nav-list mat-icon{color:#8f8eb4;margin-right:8px}
+panel-component .panel-container .panel-sidenav-container mat-sidenav-content{margin-left:240px !important;display:flex;background-color:#e9e8f0}
+panel-component .panel-container .panel-sidenav-container mat-sidenav-content .page-title-wrp{display:flex;justify-content:space-between;align-items:baseline}
+panel-component .panel-container .panel-sidenav-container mat-sidenav-content .page-title-wrp .page-title{font-size:24px;line-height:1}
+panel-component .panel-container .panel-sidenav-container mat-sidenav-content .page-title-wrp .actions{display:flex;flex-wrap:wrap;justify-content:flex-end}
+panel-component .panel-container .panel-sidenav-container mat-sidenav-content .page-title-wrp .actions button{display:flex;align-items:center}
+panel-component .panel-container .panel-sidenav-container mat-sidenav-content .page-title-wrp .actions button mat-icon{margin-right:8px}
+group-component{flex:1;background-color:white;margin:16px;padding:16px;display:flex;flex-direction:column;overflow:auto}
+group-component .second-title{margin-top:16px}group-component .loading-state{flex:1;justify-content:center;align-items:center;display:flex;flex-direction:column;font-size:14px;color:#757575}
+group-component .loading-state mat-spinner{margin-bottom:16px}group-component .no-schedules{flex:1;display:flex;align-items:center;justify-content:center;color:#757575}
+group-component .schedules-list .schedule-item{padding:16px 8px;border-bottom:1px solid #e0e0e0;cursor:pointer}
+group-component .schedules-list .schedule-item:hover{background-color:#e9e8f0}group-component .schedules-list .schedule-item .schedule-name{font-weight:500;font-size:18px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center}
+group-component .schedules-list .schedule-item .schedule-name mat-icon{color:#c3c3c3}
+group-component .schedules-list .schedule-item .date-created{color:#757575;font-size:14px;font-weight:medium}
+group-component .tasks-list .no-tasks{text-align:center;padding:32px 16px;color:#757575;font-size:14px}
+group-component .tasks-list .task-item{padding:16px;border-bottom:1px solid #e9e8f0}
+group-component .tasks-list .task-item:hover{background-color:#e9e8f0}group-component .tasks-list .task-item .task-title{font-weight:500;font-size:16px;display:flex;justify-content:space-between;align-items:center}
+group-component .tasks-list .task-item .task-title mat-icon{color:#c3c3c3}group-component .tasks-list .task-item .task-desc{margin-top:8px;color:#757575;font-size:14px}
+groups-component{flex:1;background-color:white;margin:16px;padding:16px;display:flex;flex-direction:column;overflow:auto}
+groups-component .second-title{margin-top:16px}groups-component .loading-state{flex:1;justify-content:center;align-items:center;display:flex;flex-direction:column;font-size:14px;color:#757575}
+groups-component .loading-state mat-spinner{margin-bottom:16px}groups-component .no-groups{flex:1;display:flex;align-items:center;justify-content:center;color:#757575}
+groups-component .students-list{margin-top:8px}groups-component .students-list .student-item{padding:8px 8px;border-bottom:1px solid #e0e0e0;cursor:pointer}
+groups-component .students-list .student-item:hover{background-color:#e8e8e8}subject-component{flex:1;background-color:white;margin:16px;padding:16px;display:flex;flex-direction:column}
+subject-component .page-title-wrp.second{margin-top:32px}subject-component .page-content.loading{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+subject-component .page-content.loading mat-spinner{margin-bottom:8px}subject-component .page-content .subjects-list .no-groups{font-size:14px;text-align:center;padding:8px;color:#757575}
+subject-component .page-content .subjects-list .group-item{padding:16px;border-bottom:1px solid #e9e8f0}
+subject-component .page-content .subjects-list .group-item .group-title{font-weight:500;font-size:16px}
+subject-component .page-content .subjects-list .group-item .no-schedules{text-align:center;padding:8px;color:#757575;font-size:14px}
+subject-component .page-content .subjects-list .group-item .schedules{display:grid;grid-template-columns:1fr 1fr 1fr}
+subject-component .page-content .subjects-list .group-item .schedules .schedule-item{padding:16px;margin:8px;border:1px solid #e0e0e0;border-radius:8px;cursor:pointer}
+subject-component .page-content .subjects-list .group-item .schedules .schedule-item:hover{background-color:#fafafa}
+subject-component .page-content .subjects-list .group-item .schedules .schedule-item .schedule-name{font-weight:500;font-size:18px;margin-bottom:8px}
+subject-component .page-content .subjects-list .group-item .schedules .schedule-item .date-created{color:#757575;font-size:14px;font-weight:medium}
+subject-component .page-content .tasks-list .no-tasks{text-align:center;padding:8px;color:#757575;font-size:14px}
+subject-component .page-content .tasks-list .task-item{padding:16px;border-bottom:1px solid #e9e8f0}
+subject-component .page-content .tasks-list .task-item .task-title{font-weight:500;font-size:16px}
+subject-component .page-content .tasks-list .task-item .task-desc{margin-top:8px;color:#757575;font-size:14px}
+schedule-component{flex:1;background-color:white;margin:16px;padding:16px;display:flex;flex-direction:column}
+schedule-component .page-title .delimiter{color:#cbcadc;padding-right:8px;padding-left:8px}
+schedule-component .page-title .link{cursor:pointer;color:#673ab7;text-decoration:none;font-weight:500}
+schedule-component .page-title .link.active{cursor:default;color:black}schedule-component .page-title .link.active:hover{opacity:1}
+schedule-component .page-title .link:hover{opacity:.7}schedule-component .page-title .subtitle{font-size:14px;color:#757575;margin-top:4px;font-weight:500}
+schedule-component .loading-state{flex:1;justify-content:center;align-items:center;display:flex;flex-direction:column;font-size:14px;color:#757575}
+schedule-component .loading-state mat-spinner{margin-bottom:16px}schedule-component .schedule-table{padding-top:16px;overflow:auto}
+schedule-component .schedule-table table td{padding:8px;border-left:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0}
+schedule-component .schedule-table table td:last-child{border-right:1px solid #e0e0e0}
+schedule-component .schedule-table table tr:nth-child(2) td{border-top:1px solid #a3be9d}
+schedule-component .schedule-table table tr.student-row:hover{background-color:#e9e8f0}
+schedule-component .schedule-table table td.student-cell{padding:4px;text-align:center;font-size:14px}
+schedule-component .schedule-table table td.student-cell:not(.student-data){border-color:#a3be9d}
+schedule-component .schedule-table table td.student-cell.task{background-color:#d9e0e6;border-color:#acb9c8}
+schedule-component .schedule-table table td.student-cell.sum{font-weight:bold;background-color:#eae4dd;border-color:#cec1b1}
+schedule-component .schedule-table table td.student-cell.visited{background-color:#cddcca;border-color:#a3be9d}
+schedule-component .schedule-table table td.student-cell.not-aligned{text-align:left}
+schedule-component .schedule-table table th>div{width:100%;border-top:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0;border-left:1px solid #e0e0e0;padding:8px;height:150px;box-sizing:border-box;font-size:14px}
+schedule-component .schedule-table table th:not(.with-add-button)>div{display:flex;justify-content:center;align-items:flex-end}
+schedule-component .schedule-table table th:last-child>div{border-top:0;border-bottom:0}
+schedule-component .schedule-table table th.with-add-button>div{position:relative;padding:8px;border-left:1px solid #e0e0e0;writing-mode:vertical-rl;text-orientation:mixed;box-sizing:border-box;padding-left:11px;height:150px;display:flex;align-items:center;justify-content:flex-end;line-height:1}
+schedule-component .schedule-table table th.with-add-button>div .marker{background-color:#3ab772;color:white;border-radius:100%;width:24px;height:24px;position:absolute;line-height:1;display:flex;align-items:center;justify-content:center;top:-12px;left:-14px;visibility:collapse;cursor:pointer}
+schedule-component .schedule-table table th.with-add-button>div:hover{border-left:4px solid #3ab772;padding-left:8px}
+schedule-component .schedule-table table th.with-add-button>div:hover .marker{visibility:visible}
+schedule-component .tasks-list .no-tasks{text-align:center;padding:32px 16px;color:#757575;font-size:14px}
+schedule-component .tasks-list .task-item{padding:16px;border-bottom:1px solid #e9e8f0}
+schedule-component .tasks-list .task-item .task-title{font-weight:500;font-size:16px}
+schedule-component .tasks-list .task-item .task-desc{margin-top:8px;color:#757575;font-size:14px}
+subjects-component{flex:1;background-color:white;margin:16px;padding:16px;display:flex;flex-direction:column}
+subjects-component .page-content{flex:1}subjects-component .page-content.loading{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+subjects-component .page-content.loading mat-spinner{margin-bottom:8px}subjects-component .page-content .subjects-list .subject-item{border-bottom:1px solid #ededed;padding:8px}
+subjects-component .page-content .subjects-list .subject-item .subject-title{font-size:24px;font-weight:bold;cursor:pointer}
+subjects-component .page-content .subjects-list .subject-item .no-groups{display:flex;justify-content:center;align-items:center;flex-direction:column;padding:16px;font-size:14px}
+subjects-component .page-content .subjects-list .subject-item .no-groups>*:not(button){color:#858585}
+subjects-component .page-content .subjects-list .subject-item .no-groups button{margin-top:8px}
+subjects-component .page-content .subjects-list .subject-item .groups-list{display:flex;flex-wrap:wrap}
+subjects-component .page-content .subjects-list .subject-item .groups-list .group-item{flex:0 0 25%;padding:16px;margin:8px;border:1px solid #e7dfed;box-shadow:0 0 5px rgba(0,0,0,0.1);cursor:pointer}
+subjects-component .page-content .subjects-list .subject-item .groups-list .group-item:hover{background-color:#e9e8f0}
+subjects-component .page-content .subjects-list .subject-item .groups-list .group-item .group-title{line-height:1;font-weight:500;font-size:20px}
+subjects-component .page-content .subjects-list .subject-item .groups-list .group-item .group-date{font-size:14px;color:#8a8199;margin-top:8px}
+.add-teacher-to-schedule-modal{min-width:600px}.add-teacher-to-schedule-modal .rights:not(.owner){display:flex;align-items:center}
+.add-teacher-to-schedule-modal .rights:not(.owner)>div{border:1px solid #dad9e6;border-radius:4px;padding:4px 16px}
+.add-teacher-to-schedule-modal .rights:not(.owner)>div.active{background-color:#3ab772;color:white;border-color:#3ab772}
+.add-teacher-to-schedule-modal .rights:not(.owner)>div:first-child{border-top-right-radius:0;border-bottom-right-radius:0}
+.add-teacher-to-schedule-modal .rights:not(.owner)>div:last-child{border-left:0;border-top-left-radius:0;border-bottom-left-radius:0}
+.add-teacher-to-schedule-modal .add-form{display:flex;align-items:center;justify-content:space-around}
+.add-teacher-to-schedule-modal .subscriptions-list .subscription-item{border-bottom:1px solid #e9e8f0;display:flex;padding:8px;align-items:center}
+.add-teacher-to-schedule-modal .subscriptions-list .subscription-item .username{flex:1}
+.add-teacher-to-schedule-modal .subscriptions-list .subscription-item .rights>div:not(.active){cursor:pointer}
+.add-teacher-to-schedule-modal .subscriptions-list .subscription-item .rights.owner{color:grey}
+.add-teacher-to-schedule-modal .subscriptions-list .subscription-item mat-icon{margin-left:8px;color:#8c8c93;cursor:pointer}
+.add-group-to-subject-modal{min-width:400px}.add-group-to-subject-modal mat-form-field{width:100%;box-sizing:border-box}
+.confirm-modal{min-width:400px}.create-group-modal{min-width:400px}.create-group-modal mat-form-field{width:100%;box-sizing:border-box}
+.create-schedule-modal{min-width:400px}.create-schedule-modal mat-form-field{width:100%;box-sizing:border-box}
+.create-subject-modal{min-width:400px}.create-subject-modal mat-form-field{width:100%;box-sizing:border-box}
+.create-task-modal{min-width:400px}.create-task-modal mat-form-field{width:100%;box-sizing:border-box}
