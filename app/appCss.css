@@ -60,22 +60,7 @@ groups-component{flex:1;background-color:white;margin:16px;padding:16px;display:
 groups-component .second-title{margin-top:16px}groups-component .loading-state{flex:1;justify-content:center;align-items:center;display:flex;flex-direction:column;font-size:14px;color:#757575}
 groups-component .loading-state mat-spinner{margin-bottom:16px}groups-component .no-groups{flex:1;display:flex;align-items:center;justify-content:center;color:#757575}
 groups-component .students-list{margin-top:8px}groups-component .students-list .student-item{padding:8px 8px;border-bottom:1px solid #e0e0e0;cursor:pointer}
-groups-component .students-list .student-item:hover{background-color:#e8e8e8}subject-component{flex:1;background-color:white;margin:16px;padding:16px;display:flex;flex-direction:column}
-subject-component .page-title-wrp.second{margin-top:32px}subject-component .page-content.loading{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
-subject-component .page-content.loading mat-spinner{margin-bottom:8px}subject-component .page-content .subjects-list .no-groups{font-size:14px;text-align:center;padding:8px;color:#757575}
-subject-component .page-content .subjects-list .group-item{padding:16px;border-bottom:1px solid #e9e8f0}
-subject-component .page-content .subjects-list .group-item .group-title{font-weight:500;font-size:16px}
-subject-component .page-content .subjects-list .group-item .no-schedules{text-align:center;padding:8px;color:#757575;font-size:14px}
-subject-component .page-content .subjects-list .group-item .schedules{display:grid;grid-template-columns:1fr 1fr 1fr}
-subject-component .page-content .subjects-list .group-item .schedules .schedule-item{padding:16px;margin:8px;border:1px solid #e0e0e0;border-radius:8px;cursor:pointer}
-subject-component .page-content .subjects-list .group-item .schedules .schedule-item:hover{background-color:#fafafa}
-subject-component .page-content .subjects-list .group-item .schedules .schedule-item .schedule-name{font-weight:500;font-size:18px;margin-bottom:8px}
-subject-component .page-content .subjects-list .group-item .schedules .schedule-item .date-created{color:#757575;font-size:14px;font-weight:medium}
-subject-component .page-content .tasks-list .no-tasks{text-align:center;padding:8px;color:#757575;font-size:14px}
-subject-component .page-content .tasks-list .task-item{padding:16px;border-bottom:1px solid #e9e8f0}
-subject-component .page-content .tasks-list .task-item .task-title{font-weight:500;font-size:16px}
-subject-component .page-content .tasks-list .task-item .task-desc{margin-top:8px;color:#757575;font-size:14px}
-schedule-component{flex:1;background-color:white;margin:16px;padding:16px;display:flex;flex-direction:column}
+groups-component .students-list .student-item:hover{background-color:#e8e8e8}schedule-component{flex:1;background-color:white;margin:16px;padding:16px;display:flex;flex-direction:column}
 schedule-component .page-title .delimiter{color:#cbcadc;padding-right:8px;padding-left:8px}
 schedule-component .page-title .link{cursor:pointer;color:#673ab7;text-decoration:none;font-weight:500}
 schedule-component .page-title .link.active{cursor:default;color:black}schedule-component .page-title .link.active:hover{opacity:1}
@@ -103,6 +88,21 @@ schedule-component .tasks-list .no-tasks{text-align:center;padding:32px 16px;col
 schedule-component .tasks-list .task-item{padding:16px;border-bottom:1px solid #e9e8f0}
 schedule-component .tasks-list .task-item .task-title{font-weight:500;font-size:16px}
 schedule-component .tasks-list .task-item .task-desc{margin-top:8px;color:#757575;font-size:14px}
+subject-component{flex:1;background-color:white;margin:16px;padding:16px;display:flex;flex-direction:column}
+subject-component .page-title-wrp.second{margin-top:32px}subject-component .page-content.loading{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+subject-component .page-content.loading mat-spinner{margin-bottom:8px}subject-component .page-content .subjects-list .no-groups{font-size:14px;text-align:center;padding:8px;color:#757575}
+subject-component .page-content .subjects-list .group-item{padding:16px;border-bottom:1px solid #e9e8f0}
+subject-component .page-content .subjects-list .group-item .group-title{font-weight:500;font-size:16px}
+subject-component .page-content .subjects-list .group-item .no-schedules{text-align:center;padding:8px;color:#757575;font-size:14px}
+subject-component .page-content .subjects-list .group-item .schedules{display:grid;grid-template-columns:1fr 1fr 1fr}
+subject-component .page-content .subjects-list .group-item .schedules .schedule-item{padding:16px;margin:8px;border:1px solid #e0e0e0;border-radius:8px;cursor:pointer}
+subject-component .page-content .subjects-list .group-item .schedules .schedule-item:hover{background-color:#fafafa}
+subject-component .page-content .subjects-list .group-item .schedules .schedule-item .schedule-name{font-weight:500;font-size:18px;margin-bottom:8px}
+subject-component .page-content .subjects-list .group-item .schedules .schedule-item .date-created{color:#757575;font-size:14px;font-weight:medium}
+subject-component .page-content .tasks-list .no-tasks{text-align:center;padding:8px;color:#757575;font-size:14px}
+subject-component .page-content .tasks-list .task-item{padding:16px;border-bottom:1px solid #e9e8f0}
+subject-component .page-content .tasks-list .task-item .task-title{font-weight:500;font-size:16px}
+subject-component .page-content .tasks-list .task-item .task-desc{margin-top:8px;color:#757575;font-size:14px}
 subjects-component{flex:1;background-color:white;margin:16px;padding:16px;display:flex;flex-direction:column}
 subjects-component .page-content{flex:1}subjects-component .page-content.loading{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
 subjects-component .page-content.loading mat-spinner{margin-bottom:8px}subjects-component .page-content .subjects-list .subject-item{border-bottom:1px solid #ededed;padding:8px}
@@ -115,6 +115,7 @@ subjects-component .page-content .subjects-list .subject-item .groups-list .grou
 subjects-component .page-content .subjects-list .subject-item .groups-list .group-item:hover{background-color:#e9e8f0}
 subjects-component .page-content .subjects-list .subject-item .groups-list .group-item .group-title{line-height:1;font-weight:500;font-size:20px}
 subjects-component .page-content .subjects-list .subject-item .groups-list .group-item .group-date{font-size:14px;color:#8a8199;margin-top:8px}
+.add-group-to-subject-modal{min-width:400px}.add-group-to-subject-modal mat-form-field{width:100%;box-sizing:border-box}
 .add-teacher-to-schedule-modal{min-width:600px}.add-teacher-to-schedule-modal .rights:not(.owner){display:flex;align-items:center}
 .add-teacher-to-schedule-modal .rights:not(.owner)>div{border:1px solid #dad9e6;border-radius:4px;padding:4px 16px}
 .add-teacher-to-schedule-modal .rights:not(.owner)>div.active{background-color:#3ab772;color:white;border-color:#3ab772}
@@ -126,7 +127,6 @@ subjects-component .page-content .subjects-list .subject-item .groups-list .grou
 .add-teacher-to-schedule-modal .subscriptions-list .subscription-item .rights>div:not(.active){cursor:pointer}
 .add-teacher-to-schedule-modal .subscriptions-list .subscription-item .rights.owner{color:grey}
 .add-teacher-to-schedule-modal .subscriptions-list .subscription-item mat-icon{margin-left:8px;color:#8c8c93;cursor:pointer}
-.add-group-to-subject-modal{min-width:400px}.add-group-to-subject-modal mat-form-field{width:100%;box-sizing:border-box}
 .confirm-modal{min-width:400px}.create-group-modal{min-width:400px}.create-group-modal mat-form-field{width:100%;box-sizing:border-box}
 .create-schedule-modal{min-width:400px}.create-schedule-modal mat-form-field{width:100%;box-sizing:border-box}
 .create-subject-modal{min-width:400px}.create-subject-modal mat-form-field{width:100%;box-sizing:border-box}
